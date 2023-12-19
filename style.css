@@ -121,11 +121,6 @@ button:active{
     transform: scale(1.1);
 }
 
-.slider span{
-    position: absolute;
-    outline: 10px solid lime;
-}
-
 .clear{
     clear: both;
 }

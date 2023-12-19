@@ -43,7 +43,7 @@ body{
     animation: animate2 10s linear infinite;
 }
 
-.square:hover{
+.square:hover i{
     border: 6px solid var(--clr);
     filter: drop-shadow(0 0 20px var(--clr));
 }
@@ -79,13 +79,14 @@ body{
 
 .login h2{
     font-size: 2em;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .login .inputBox input{
     position: relative;
     width: 100%;
-    padding: 12px 20px;
+    padding: 15px 20px;
+    margin: 2px;
     background: transparent;
     border: 2px solid black;
     border-radius: 40px;
@@ -93,4 +94,39 @@ body{
     color: black;
     box-shadow: none;
     outline: none;
+}
+
+.login .inputBox input[type="submit"]{
+    cursor: pointer;
+    width: 100%;
+    background-color: #00c6ff;
+    border-radius: 100px;
+    box-shadow: 0 0.25em 0 #3921ee;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.login .inputBox input[type="submit"]:hover{
+    transition: 100ms linear;
+    background-color: #009dff;
+}
+
+.login .inputBox input[type="submit"]:active{
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+.login .links{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #252525;
+}
+
+.login .links a{
+    color: #252525;
 }

@@ -1,3 +1,15 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #555;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #777;
+    border-radius: 5px;
+}
+  
+
 body{
     font-family: 'Rubik', sans-serif;
     background-color: white;
@@ -111,9 +123,10 @@ button:active{
 
 .slider{
     height: 280px;
-    width: 1200px;
+    width: 100%;
     overflow: hidden;
-    position: absolute;
+    position: relative;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .slider img{
@@ -161,13 +174,11 @@ button:active{
 }
 
 .main .slider .slidercontent span{
-    
     font-weight: 600;
     color: rgb(255, 76, 76);
-    
-    font-size: 20px;
+    font-size: 25px;
     position: absolute;
-    right: 400px;
+    right: 390px;
     top: 50px;
 }
 
@@ -181,6 +192,42 @@ button:active{
     right: 100px;
     top: 75px;
     width: 400px;
+}
+
+/* Tab */
+.wrapper {
+    margin: 0px auto;
+}
+
+.wrapper .tabs-box {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.wrapper .tabs-box a{
+    text-decoration: none;
+    color: black;
+}
+
+.tabs-box .tab {
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    background: #f5f4fd;
+    padding: 13px 20px;
+    border-radius: 30px;
+    border: 1px solid #d8d5f2;
+    margin: 0px auto;
+}
+
+.tabs-box .tab:hover{
+    background: #efedfb;
+}
+
+.tabs-box .tab.active{
+    color: #fff;
+    background: #5372F0;
+    border-color: transparent;
 }
 
 .clear{

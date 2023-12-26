@@ -230,6 +230,63 @@ button:active{
     border-color: transparent;
 }
 
+.background{
+    padding: 5px 25px;
+    height: fit-content;
+    background: radial-gradient(circle, rgba(57,33,238,1) 0%, #00c6ff 100%);
+    border-radius: 15px;
+    color: white;
+}
+
+.background h2{
+    text-shadow: 0 0 10px black;
+}
+
+.kurslar{
+    display: flex;
+    margin: 0px auto;
+    gap:20px;
+    width: 100%;
+}
+
+.kurslar .kurscard{
+    width: 33%;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.491);
+    text-align: center;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.kurslar .kurscard img{
+    width: 100%;
+    height: 62%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.kurslar .kurscard span{
+    display: block;
+    color: black;
+    font-size: 20px;
+}
+
+.kurslar .kurscard .eski-fiyat{
+    display: block;
+    color: black;
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.kurslar .kurscard .fiyat{
+    display: block;
+    color: rgb(0, 188, 163);
+    font-weight: 700;
+    font-size: 26px;
+}
+
 .clear{
     clear: both;
 }

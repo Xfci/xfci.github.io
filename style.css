@@ -226,14 +226,14 @@ button:active{
 
 .tabs-box .tab.active{
     color: #fff;
-    background: #5372F0;
+    background: #1099fa;
     border-color: transparent;
 }
 
 .background{
     padding: 5px 25px;
     height: fit-content;
-    background: radial-gradient(circle, rgba(57,33,238,1) 0%, #00c6ff 100%);
+    background: radial-gradient(circle, #3921ee 0%, #00c6ff 100%);
     border-radius: 15px;
     color: white;
 }
@@ -257,6 +257,8 @@ button:active{
     text-align: center;
     border-radius: 5px;
     line-height: 30px;
+    margin-bottom: 20px;
+    transition: transform 500ms;
 }
 
 .kurslar .kurscard img{
@@ -285,6 +287,11 @@ button:active{
     color: rgb(0, 188, 163);
     font-weight: 700;
     font-size: 26px;
+}
+
+.kurslar .kurscard:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #000000;
 }
 
 .clear{

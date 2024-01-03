@@ -118,7 +118,7 @@ button:active{
     max-width: 1200px;
     margin: 0px auto;
     margin-top: 40px;
-    height: 2000px;
+    height: 1800px;
 }
 
 .slider{
@@ -252,6 +252,7 @@ button:active{
 .kurslar .kurscard{
     width: 33%;
     height: 300px;
+    cursor: pointer;
     background-color: white;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.491);
     text-align: center;
@@ -292,6 +293,191 @@ button:active{
 .kurslar .kurscard:hover{
     transform: scale(1.05);
     box-shadow: 0 0 15px #000000;
+}
+
+.social ul li{
+    display: inline-block;
+    color: white;
+    padding: 20px 25px 0px 0px;
+}
+
+.footer{
+    width: 100%;
+    height: 280px;
+    margin: 0px auto;
+    background: radial-gradient(circle, rgba(57,33,238,1) 0%, #00c6ff 100%);
+}
+
+.footercontent{
+    margin: 0px auto;
+    max-width: 1200px;
+    padding: 10px;
+    height: 260px;
+}
+
+.footercontent .bilgi{
+    padding: 0px 10px;
+    width: 32%;
+    height: fit-content;
+    float: left;
+    color: white;
+    text-align: justify;
+}
+
+.footercontent .bilgi img{
+    float: left;
+    margin-right: 10px;
+}
+
+
+.footercontent .bolme{
+    padding: 0px 30px;
+    width: 17%;
+    height: fit-content;
+    color: white;
+    float: left;
+}
+
+.footercontent .bolme span{
+    display:block;
+    padding: 10px 0px;
+}
+
+.footercontent .bolme a{
+    text-decoration: none;
+    color: white;
+}
+
+.footercontent .bolme a:hover{
+    text-decoration: underline;
+}
+
+.iletisim{
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-top: 40px;
+    height: 800px;
+}
+
+.iletisim .form{
+    width: 50%;
+    float: left;
+    padding: 10px 0px;
+}
+.iletisim .form span{
+    padding-left: 10px;
+}
+
+.iletisim .ikiyebolme{
+    width: 50%;
+    float: left;
+}
+
+.iletisim .ikiyebolme input{
+    position: relative;
+    width: 79%;
+    padding: 5px 10px;
+    margin: 2px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 1em;
+    color: black;
+    box-shadow: none;
+    outline: none;
+}
+
+.iletisim .form span{
+    display: block;
+    color: #595959;
+}
+
+.form input{
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    width: 90%;
+    padding: 5px 10px;
+    margin: 2px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 1em;
+    color: black;
+    box-shadow: none;
+    outline: none;
+}
+
+.form textarea{
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    width: 90%;
+    padding: 5px 10px;
+    margin: 2px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 1em;
+    color: black;
+    box-shadow: none;
+    outline: none;
+    max-width: 90%;
+    min-width: 50%;
+}
+
+.form input[type="submit"]{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    width: 150px;
+    background-color: #00c6ff;
+    border-radius: 100px;
+    box-shadow: 0 0.25em 0 #3921ee;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.form input[type="submit"]:hover{
+    transition: 100ms linear;
+    background-color: #009dff;
+}
+
+.form input[type="submit"]:active{
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+.hakkimizda{
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-top: 40px;
+    height: 1400px;
+}
+
+.hakkimizda .kutular{
+    width: 40%;
+    height: fit-content;
+    text-align: justify;
+    outline: 3px dashed #006aff;
+    padding: 20px;
+    float: left;
+    margin: 10px;
+}
+
+.hakkimizda .imgkutu{
+    border-radius: 15px;
+    width: 50%;
+    height: 400px;
+    float: right;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-right: 40px;
 }
 
 .clear{

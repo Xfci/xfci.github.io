@@ -14,6 +14,7 @@ body{
     font-family: 'Rubik', sans-serif;
     background-color: white;
     margin: 0px auto;
+    background-image: url(assets/images/bg.jpg);
 }
 
 button{
@@ -118,7 +119,7 @@ button:active{
     max-width: 1200px;
     margin: 0px auto;
     margin-top: 40px;
-    height: 1800px;
+    height: max-content;
 }
 
 .slider{
@@ -197,6 +198,7 @@ button:active{
 /* Tab */
 .wrapper {
     margin: 0px auto;
+    
 }
 
 .wrapper .tabs-box {
@@ -236,20 +238,21 @@ button:active{
     background: radial-gradient(circle, #3921ee 0%, #00c6ff 100%);
     border-radius: 15px;
     color: white;
+    margin-bottom: 40px;
 }
 
 .background h2{
     text-shadow: 0 0 10px black;
 }
 
-.kurslar{
+.cards{
     display: flex;
     margin: 0px auto;
     gap:20px;
     width: 100%;
 }
 
-.kurslar .kurscard{
+.cards .card{
     width: 33%;
     height: 300px;
     cursor: pointer;
@@ -262,20 +265,20 @@ button:active{
     transition: transform 500ms;
 }
 
-.kurslar .kurscard img{
+.cards .card img{
     width: 100%;
     height: 62%;
     background-color: white;
     border-radius: 5px;
 }
 
-.kurslar .kurscard span{
+.cards .card span{
     display: block;
     color: black;
     font-size: 20px;
 }
 
-.kurslar .kurscard .eski-fiyat{
+.cards .card .eski-fiyat{
     display: block;
     color: black;
     text-decoration: line-through;
@@ -283,17 +286,40 @@ button:active{
     font-size: 20px;
 }
 
-.kurslar .kurscard .fiyat{
+.cards .card .fiyat{
     display: block;
     color: rgb(0, 188, 163);
     font-weight: 700;
     font-size: 26px;
 }
 
-.kurslar .kurscard:hover{
+.cards .card:hover{
     transform: scale(1.05);
     box-shadow: 0 0 15px #000000;
 }
+
+.cards .card .etiket{
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    border-radius: 100%;
+    line-height: 20px;
+    background-color: rebeccapurple;
+    position: absolute;
+    text-align: center;
+    
+}
+
+.cards .card .etiket span{
+    color: white;
+    margin-top: 15px;
+}
+
+.cards .card .likebuttons span{
+    padding: 10px;
+    float: right;
+}
+
 
 .social ul li{
     display: inline-block;
@@ -464,6 +490,7 @@ button:active{
     width: 40%;
     height: fit-content;
     text-align: justify;
+    background-color: white;
     outline: 3px dashed #006aff;
     padding: 20px;
     float: left;

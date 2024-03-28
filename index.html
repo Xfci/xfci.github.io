@@ -13,29 +13,34 @@
     <title>Kromium</title>
 </head>
 <body>
-    <!--Navbar-->
-    <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary shadow">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand py-0" href="index.html"><img src="assets/images/logo.svg" width="40" style="float: left;"><span>Kromium</span></a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-                <form class="d-flex" role="search">
-                <a href="login.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-lg" style="color: #ffffff;"> </i> Giriş Yap</button></a>
-                <a href="singup.html"><button><i class="fa-solid fa-people-group fa-lg" style="color: #ffffff;"> </i> Üye Ol</button></a>
-                </form>
-            </div>
-        </div>
-    </nav>
-    <!--Navbar End-->
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg bg-white shadow sticky-top">
+    <div class="container ">
+      <a class="navbar-brand py-0" href="index.html"><img src="assets/images/logo.svg" width="40" style="float: left;"><span>Kromium</span></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!--Slider-->
+      <div class="navbar-collapse collapse justify-content-end" id="navbarsExample07">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="login.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-lg" style="color: #ffffff;"> </i> Giriş Yap</button></a>
+          </li>
+          <li class="nav-item">
+            <a href="singup.html"><button><i class="fa-solid fa-people-group fa-lg" style="color: #ffffff;"> </i> Üye Ol</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar End-->
+
+  <!--Slider-->
+  <div class="container">
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="1000">
-            <div class="sliderImages" style="background-image: url(assets/images/yazilar/kimya.jpg);"></div>
+            <div class="sliderImages" style="background-image: url(assets/images/gen.webp);"></div>
             <div class="carousel-caption d-none d-md-block">
                 <h5>Yeni Kurslar</h5>
                 <p>Yeni eklenen öğretici ve bilgilendirici kurslarımız sayesinde netlerinizi uçuşa geçirebilirsiniz. Mükemmel hocalarımın harika anlatımları ile öğrenirken eğleneceğinizin garantisini veriyoruz...</p>
@@ -43,6 +48,10 @@
         </div>
           <div class="carousel-item" data-bs-interval="2000">
             <div class="sliderImages" style="background-image: url(assets/images/yazilar/makale.webp);"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Yeni Makaleler</h5>
+              <p>Yeni eklenen öğretici ve bilgilendirici makaleleriz sayesinde bilginize bilgi katabilirsiniz. Harika anlatımları ile araştırırken eğleneceğinizin garantisini veriyoruz...</p>
+            </div>
         </div>
           <div class="carousel-item">
             <div class="sliderImages" style="background-image: url(assets/images/yazilar/islam.webp);"></div>
@@ -57,13 +66,17 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    <!--Slider End-->
+  </div>
+  <!--Slider End-->
     
-    <div class="alert my-2 text-light mx-4" role="alert">
+  <div class="container" >
+    <div class="alert my-2 text-light" role="alert">
         Giriş Puanı 5000 z-puan kazan
     </div>
+  </div>
 
-    <!--Wrapper-->
+  <!--Wrapper-->
+  <div class="container">
     <div class="row my-4">
         <div class="col-12 col-sm-6 col-md-2 col-lg-2">
             <a href="index.html" class="tablink"><div class="tab active text-center mx-4">Ana Sayfa</div></a>
@@ -89,10 +102,12 @@
             <a href="paylasimlar.html" class="tablink"><div class="tab text-center mx-4">Paylaşımlar</div></a>
         </div>
     </div>
-    <!--Wrapper End-->
+  </div>
+  <!--Wrapper End-->
 
-    <!--Cards-->
-    <div class="background mx-4 my-2 p-4">
+  <!--Cards-->
+  <div class="container">
+    <div class="background my-2 p-4">
         <h2>En son eklenenler <i class="fa-solid fa-clock-rotate-left fa-fade"></i></h2>
         <div class="row row-cols-1 row-cols-md-3 g-4 my-2">
             <div class="col">
@@ -142,10 +157,12 @@
             </div>
           </div>
     </div>
+  </div>
     <!--Cards End-->
 
     <!--Cards-->
-    <div class="background mx-4 my-4 p-4">
+    <div class="container">
+    <div class="background my-4 p-4">
         <h2>En popüler makaleler <i class="fa-solid fa-newspaper fa-bounce"></i></h2>
         <div class="row row-cols-1 row-cols-md-3 g-4 my-2">
             <div class="col">
@@ -192,6 +209,8 @@
             </div>
           </div>
     </div>
+  </div>
+
     <!--Cards End-->
         
 
@@ -210,7 +229,7 @@
           <div class="col mb-3">
             <h5>KURUMSAL</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">İletişim</a></li>
+              <li class="nav-item mb-2"><a href="iletisim.html" class="nav-link p-0 text-muted">İletişim</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gizlilik Politikası</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Çerez Politikası</a></li>
@@ -221,7 +240,7 @@
           <div class="col mb-3">
             <h5>ŞİRKET</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hakkımızda</a></li>
+              <li class="nav-item mb-2"><a href="hakkimizda.html" class="nav-link p-0 text-muted">Hakkımızda</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ekibimiz</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kariyer</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Basın</a></li>
@@ -231,10 +250,10 @@
           <div class="col mb-3">
             <h5>HİZMETLER</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kurslar</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dersler</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Yazılar</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Makaleler</a></li>
+              <li class="nav-item mb-2"><a href="kurslar.html" class="nav-link p-0 text-muted">Kurslar</a></li>
+              <li class="nav-item mb-2"><a href="dersler.html" class="nav-link p-0 text-muted">Dersler</a></li>
+              <li class="nav-item mb-2"><a href="yazilar.html" class="nav-link p-0 text-muted">Yazılar</a></li>
+              <li class="nav-item mb-2"><a href="makaleler.html" class="nav-link p-0 text-muted">Makaleler</a></li>
             </ul>
           </div>
         </footer>
@@ -249,52 +268,8 @@
             </ul>
           </div>
       </div>
-      
     <!--Footer End-->
-        
-    <!--
-        <div class="footer">
-            <div class="footercontent">
-                <div class="bilgi">
-                    <img src="assets/images/logo-white.svg" width="100px" >
-                    <h2>KROMIUM</h2>
-                    <span>Yeni ve güncel bilgiler için bizi sosyal medyadan takip etmeyi unutmayın.</span>
-                    <div class="social">
-                        <ul>
-                            <a href=""><li><i class="fa-brands fa-facebook fa-2xl"></i></li></a>
-                            <a href=""><li><i class="fa-brands fa-instagram fa-2xl"></i></li></a>
-                            <a href=""><li><i class="fa-brands fa-x-twitter fa-2xl"></i></li></a>
-                            <a href=""><li><i class="fa-brands fa-youtube fa-2xl"></i></li></a>
-                            <a href=""><li><i class="fa-brands fa-whatsapp fa-2xl"></i></li></a>
-                        </ul>
-                    </div>
-                    <i class="fa-solid fa-phone fa-2xl" style="padding: 40px;"></i><span>0212 275 45 45</span>
-                </div>
-                <div class="bolme">
-                    <span><strong>KURUMSAL</strong></span>
-                    <span><a href="iletisim.html">İletişim</a></span>
-                    <span><a href="https://yemin363.pitobt.com.tr/">Blog</a></span>
-                    <span><a href="#">Gizlilik Politikası</a></span>
-                    <span><a href="#">Çerez (Cookie) Politikası</a></span>
-                    <span><a href="#">Web Sitesi Aydınlatma Metni</a></span>
-                </div>
-                <div class="bolme">
-                    <span><strong>ŞİRKET</strong></span>
-                    <span><a href="hakkimizda.html">Hakkımızda</a></span>
-                    <span><a href="#">Ekibimiz</a></span>
-                    <span><a href="#">Kariyer</a></span>
-                    <span><a href="#">Basın</a></span>
-                </div>
-                <div class="bolme">
-                    <span><strong>HİZMETLER</strong></span>
-                    <span><a href="#">Kurslar</a></span>
-                    <span><a href="#">Dersler</a></span>
-                    <span><a href="#">Yazılar</a></span>
-                    <span><a href="#">Makaleler</a></span>
-                </div>
-            </div>
-        </div>
--->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

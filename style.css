@@ -14,7 +14,7 @@ body{
     font-family: 'Rubik', sans-serif;
     background-color: white;
     margin: 0px auto;
-    background-image: url(assets/images/bg.jpg);
+    background-image: url(assets/images/bggray.jpg);
 }
 
 .navbar button{
@@ -26,9 +26,8 @@ body{
     text-align: center;
     cursor: pointer;
     letter-spacing: 1px;
-    padding: 0px 20px 0px 20px;
+    padding: 5px 20px 5px 20px;
     margin: 0px 5px 0px 5px;
-    height: 35px;
     border: 0px;
     background-color: #00c6ff;
     border-radius: 100px;
@@ -70,10 +69,14 @@ body{
 }
 
 .sliderImages{
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: 100% 150%;
+}
+
+.carousel-caption p{
+    text-shadow: 0px 1px 3px black;
 }
 
 .right{
@@ -90,17 +93,6 @@ body{
     color: white;
 }
 
-.slide{
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    line-height: 25px;
-    font-size: 16px;
-    color: white;
-    background: #3921ee;
-    background: radial-gradient(circle, rgba(57,33,238,1) 0%, #00c6ff 100%);
-    padding: 7px 0px;
-}
 
 .slidetext{
     max-width: 1200px;
@@ -117,15 +109,16 @@ body{
 
 .slider{
     height: 280px;
-    width: 100%;
     overflow: hidden;
     position: relative;
     border-radius: 0px 0px 15px 15px;
+    object-fit: cover;
 }
 
 .slider img{
-    transition: transform 500ms;
-    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .carousel-caption h5{
@@ -245,7 +238,7 @@ body{
     border-radius: 5px;
     line-height: 30px;
     margin-bottom: 20px;
-    transition: transform 500ms;
+    
 }
 
 .cards .card img{
@@ -261,25 +254,9 @@ body{
     font-size: 20px;
 }
 
-.cards .card .eski-fiyat{
-    display: block;
-    color: black;
-    text-decoration: line-through;
-    font-style: italic;
-    font-size: 20px;
-}
 
-.cards .card .fiyat{
-    display: block;
-    color: rgb(0, 188, 163);
-    font-weight: 700;
-    font-size: 26px;
-}
 
-.cards .card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #000000;
-}
+
 
 .cards .card .etiket{
     width: 75px;
@@ -303,6 +280,30 @@ body{
     float: right;
 }
 */
+
+
+.card{
+    transition: transform 500ms;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #000000;
+}
+
+.eski-fiyat{
+    display: block;
+    color: black;
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.fiyat{
+    display: block;
+    color: rgb(0, 188, 163);
+    font-weight: 700;
+    font-size: 26px;
+}
 
 .social ul li{
     display: inline-block;
@@ -358,41 +359,26 @@ body{
     color: #595959;
 }
 
-.form input{
+.contact input{
     background-color: white;
     font-family: 'Rubik', sans-serif;
-    position: relative;
-    width: 90%;
-    padding: 5px 10px;
-    margin: 2px;
-    margin-bottom: 20px;
     border: 2px solid black;
     border-radius: 40px;
     font-size: 1em;
-    color: black;
-    box-shadow: none;
-    outline: none;
 }
 
-.form textarea{
+.contact textarea{
     background-color: white;
     font-family: 'Rubik', sans-serif;
-    position: relative;
-    width: 90%;
     padding: 5px 10px;
-    margin: 2px;
     margin-bottom: 20px;
     border: 2px solid black;
     border-radius: 15px;
     font-size: 1em;
     color: black;
-    box-shadow: none;
-    outline: none;
-    max-width: 90%;
-    min-width: 50%;
 }
 
-.form input[type="submit"]{
+input[type="submit"]{
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -418,32 +404,19 @@ body{
     box-shadow: none;
 }
 
-.hakkimizda{
-    max-width: 1200px;
-    margin: 0px auto;
-    margin-top: 40px;
-    height: 1400px;
-}
-
 .hakkimizda .kutular{
-    width: 40%;
     height: fit-content;
     text-align: justify;
     background-color: white;
     outline: 3px dashed #006aff;
     padding: 20px;
-    float: left;
-    margin: 10px;
 }
 
 .hakkimizda .imgkutu{
     border-radius: 15px;
-    width: 50%;
     height: 400px;
-    float: right;
     overflow: hidden;
-    margin-top: 30px;
-    margin-right: 40px;
+    margin: 0 auto;
 }
 
 .clear{

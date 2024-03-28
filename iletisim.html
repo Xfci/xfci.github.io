@@ -9,111 +9,166 @@
     <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Kromium</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="nav">
-                <a href="index.html"><div class="logo">
-                    <img src="assets/images/logo.svg" width="40" style="float: left;">
-                    <span class="title">Kromium</span>
-                </div></a>
+    <!--Navbar-->
+  <nav class="navbar navbar-expand-lg bg-white shadow sticky-top">
+    <div class="container ">
+      <a class="navbar-brand py-0" href="index.html"><img src="assets/images/logo.svg" width="40" style="float: left;"><span>Kromium</span></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                <div class="right"> 
-                    <a href="login.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-lg" style="color: #ffffff;"> </i> Giriş Yap</button></a>
-                    <a href="singup.html"><button><i class="fa-solid fa-people-group fa-lg" style="color: #ffffff;"> </i> Üye Ol</button></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="slide"><div class="slidetext"><span>İletşime geçen üylere 1000 z-puan hediye!</span></div></div>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarsExample07">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="login.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-lg" style="color: #ffffff;"> </i> Giriş Yap</button></a>
+          </li>
+          <li class="nav-item">
+            <a href="singup.html"><button><i class="fa-solid fa-people-group fa-lg" style="color: #ffffff;"> </i> Üye Ol</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar End-->
 
-        <div clear="clear"></div>
+  <!--Alert-->
+  <div class="container" >
+    <div class="alert my-2 text-light" role="alert">
+        Giriş Puanı 5000 z-puan kazan
+    </div>
+  </div>        
+  <!--Alert End-->
 
-        <div class="iletisim">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20257.29187823402!2d29.033636589966928!3d40.99758461077342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7e8b8d0a0bf%3A0x9f452f654569ea3a!2zQmlsaW0gw5xza8O8ZGFy!5e0!3m2!1str!2str!4v1704313476436!5m2!1str!2str" width="1200" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="form">
+  <!--Slider-->
+  <div class="container">
+    <div class="slider">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20257.29187823402!2d29.033636589966928!3d40.99758461077342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7e8b8d0a0bf%3A0x9f452f654569ea3a!2zQmlsaW0gw5xza8O8ZGFy!5e0!3m2!1str!2str!4v1704313476436!5m2!1str!2str" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <!--Slider End-->
+
+  <!--Contact-->
+  <div class="container bg-white py-3 my-3 rounded-3 contact">
+    <div class="row my-3">
+        <div class="col-12 col-sm-12 col-md-6">
+            <form action="" method="post">
                 <h1>İletişime Geç!</h1>
-                <div class="ikiyebolme">
-                    <span>Ad *</span>
-                    <input type="text" placeholder="...">
-                </div>
-                <div class="ikiyebolme">
-                    <span>Soyad *</span>
-                    <input type="text" placeholder="...">
-                </div>
-                <span>E-Posta adresiniz *</span>
-                <input type="text" placeholder="...@gmail.com">
-                <span>Mesajınızı girin *</span>
-                <textarea cols="30" rows="7" placeholder="..."></textarea>
-                <input type="submit" value="GÖNDER">
-            </div>
-            <div class="form">
-                <div style="padding-left: 100px;">
-                <h1>İletişime Bilgileri</h1>
-                <h3><i class="fa-solid fa-location-dot"></i> Adres</h3>
-                <span>Ünalan, Ünalan Cd. No:11, 34700 Üsküdar/İstanbul</span>
-                <h3><i class="fa-solid fa-phone"></i></i> Telefon</h3>
-                <span>0212 275 45 45 - 0212 275 25 25</span>
-                <h3><i class="fa-solid fa-envelope"></i></i></i> E-Posta</h3>
-                <span>0212 275 45 45 - 0212 275 25 25</span>
-                <h3><i class="fa-solid fa-envelope"></i></i></i> Sosyal Medya</h3>
-                <div class="social">
-                    <ul >
-                        <a href=""><li><i class="fa-brands fa-facebook fa-xl" style="color: #595959;"></i></li></a>
-                        <a href=""><li><i class="fa-brands fa-instagram fa-xl" style="color: #595959;"></i></li></a>
-                        <a href=""><li><i class="fa-brands fa-x-twitter fa-xl" style="color: #595959;"></i></li></a>
-                        <a href=""><li><i class="fa-brands fa-youtube fa-xl" style="color: #595959;"></i></li></a>
-                        <a href=""><li><i class="fa-brands fa-whatsapp fa-xl" style="color: #595959;"></i></li></a>
-                    </ul>
-                </div>
-            </div>
-            </div>
-
-
-        </div>
-        <div class="footer">
-            <div class="footercontent">
-                <div class="bilgi">
-                    <img src="assets/images/logo-white.svg" width="100px" >
-                    <h2>KROMIUM</h2>
-                    <span>Yeni ve güncel bilgiler için bizi sosyal medyadan takip etmeyi unutmayın.</span>
-                    <div class="social">
-                        <ul>
-                            <a href=""><li><i class="fa-brands fa-facebook fa-2xl"></i></li></a>
-                            <a href=""><li><i class="fa-brands fa-instagram fa-2xl"></i></li></a>
-                            <a href=""><li><i class="fa-brands fa-x-twitter fa-2xl"></i></li></a>
-                            <a href=""><li><i class="fa-brands fa-youtube fa-2xl"></i></li></a>
-                            <a href=""><li><i class="fa-brands fa-whatsapp fa-2xl"></i></li></a>
-                        </ul>
+                <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Ad">
                     </div>
-                    <i class="fa-solid fa-phone fa-2xl" style="padding: 40px;"></i><span>0212 275 45 45</span>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Soyad">
+                    </div>
                 </div>
-                <div class="bolme">
-                    <span><strong>KURUMSAL</strong></span>
-                    <span><a href="iletisim.html">İletişim</a></span>
-                    <span><a href="https://yemin363.pitobt.com.tr/">Blog</a></span>
-                    <span><a href="#">Gizlilik Politikası</a></span>
-                    <span><a href="#">Çerez (Cookie) Politikası</a></span>
-                    <span><a href="#">Web Sitesi Aydınlatma Metni</a></span>
+                <div class="row my-3 mx-0">
+                    <input type="email" class="form-control" placeholder="E-Posta">
                 </div>
-                <div class="bolme">
-                    <span><strong>ŞİRKET</strong></span>
-                    <span><a href="hakkimizda.html">Hakkımızda</a></span>
-                    <span><a href="#">Ekibimiz</a></span>
-                    <span><a href="#">Kariyer</a></span>
-                    <span><a href="#">Basın</a></span>
+                <div class="row mx-0">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Mesajınız..."></textarea>
                 </div>
-                <div class="bolme">
-                    <span><strong>HİZMETLER</strong></span>
-                    <span><a href="kurslar.html">Kurslar</a></span>
-                    <span><a href="#">Dersler</a></span>
-                    <span><a href="#">Yazılar</a></span>
-                    <span><a href="#">Makaleler</a></span>
+                <div class="row p-3">
+                    <input type="submit" value="GÖNDER">
+                </div>
+            </form>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6">
+            <h1>İletişime Bilgileri</h1>
+            <h3><i class="fa-solid fa-location-dot my-2"></i> Adres</h3>
+            <span>Ünalan, Ünalan Cd. No:11, 34700 Üsküdar/İstanbul</span>
+            <h3><i class="fa-solid fa-phone my-2"></i></i> Telefon</h3>
+            <span>0212 275 45 45 - 0212 275 25 25</span>
+            <h3><i class="fa-solid fa-envelope my-2"></i></i></i> E-Posta</h3>
+            <span>kromium@info.com - destek@kromium.com</span>
+            <h3><i class="fa-solid fa-envelope my-2"></i></i></i> Sosyal Medya</h3>
+            <div class="row my-3">
+                <div class="col-4 col-sm-4 col-md-2">
+                    <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
+                </div>
+                <div class="col-4 col-sm-4 col-md-2">
+                    <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
+                </div>
+                <div class="col-4 col-sm-4 col-md-2">
+                    <a href=""><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                </div>
+                <div class="col-4 col-sm-4 col-md-2">
+                    <a href=""><i class="fa-brands fa-youtube fa-xl"></i></a>
+                </div>
+                <div class="col-4 col-sm-4 col-md-2">
+                    <a href=""><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                </div>
+                <div class="col-4 col-sm-4 col-md-2">
+                    <a href=""><i class="fa-brands fa-telegram fa-xl"></i></a>
                 </div>
             </div>
         </div>
     </div>
+  </div>
+
+  <!--Footer-->
+  <div class="container-fluid footerColor text-light">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 my-0 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <img src="assets/images/logo-white.svg" width="100px">  
+          <span class=" justify-content-center mx-3">Yeni ve güncel bilgiler için bizi sosyal medyadan takip etmeyi unutmayın.</span>
+        </a>
+      </div>
+      <div class="col mb-3">
+      </div>
+  
+      <div class="col mb-3">
+        <h5>KURUMSAL</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="iletisim.html" class="nav-link p-0 text-muted">İletişim</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gizlilik Politikası</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Çerez Politikası</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>ŞİRKET</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="hakkimizda.html" class="nav-link p-0 text-muted">Hakkımızda</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ekibimiz</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kariyer</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Basın</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>HİZMETLER</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="kurslar.html" class="nav-link p-0 text-muted">Kurslar</a></li>
+          <li class="nav-item mb-2"><a href="dersler.html" class="nav-link p-0 text-muted">Dersler</a></li>
+          <li class="nav-item mb-2"><a href="yazilar.html" class="nav-link p-0 text-muted">Yazılar</a></li>
+          <li class="nav-item mb-2"><a href="makaleler.html" class="nav-link p-0 text-muted">Makaleler</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-0 border-top">
+        <p>© 2024 Kromium, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex text-center">
+            <a href=""><li><i class="fa-brands fa-facebook fa-2xl mx-2"></i></li></a>
+            <a href=""><li><i class="fa-brands fa-instagram fa-2xl mx-2"></i></li></a>
+            <a href=""><li><i class="fa-brands fa-x-twitter fa-2xl mx-2"></i></li></a>
+            <a href=""><li><i class="fa-brands fa-youtube fa-2xl mx-2"></i></li></a>
+            <a href=""><li><i class="fa-brands fa-whatsapp fa-2xl mx-2"></i></li></a>
+        </ul>
+      </div>
+  </div>
+<!--Footer End-->
+
+ 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

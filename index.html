@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Kromium</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary shadow">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand py-0" href="index.html"><img src="assets/images/logo.svg" width="40" style="float: left;"><span>Kromium</span></a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                <form class="d-flex" role="search">
+                <a href="login.html"><button><i class="fa-solid fa-arrow-right-to-bracket fa-lg" style="color: #ffffff;"> </i> Giriş Yap</button></a>
+                <a href="singup.html"><button><i class="fa-solid fa-people-group fa-lg" style="color: #ffffff;"> </i> Üye Ol</button></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!--Slider-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <div class="sliderImages" style="background-image: url(assets/images/yazilar/kimya.jpg);"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Yeni Kurslar</h5>
+                <p>Yeni eklenen öğretici ve bilgilendirici kurslarımız sayesinde netlerinizi uçuşa geçirebilirsiniz. Mükemmel hocalarımın harika anlatımları ile öğrenirken eğleneceğinizin garantisini veriyoruz...</p>
+            </div>
+        </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="sliderImages" style="background-image: url(assets/images/yazilar/makale.webp);"></div>
+        </div>
+          <div class="carousel-item">
+            <div class="sliderImages" style="background-image: url(assets/images/yazilar/islam.webp);"></div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--Slider End-->
+    
+    <div class="alert my-2 text-light mx-4" role="alert">
+        Giriş Puanı 5000 z-puan kazan
+    </div>
+
+    <!--Wrapper-->
+    <div class="row my-4">
+        <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+            <a href="index.html" class="tablink"><div class="tab active text-center mx-4">Ana Sayfa</div></a>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+            <a href="kurslar.html" class="tablink"><div class="tab text-center mx-4">Kurslar</div></a>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+            <a href="yazilar.html" class="tablink"><div class="tab text-center mx-4">Yazılar</div></a>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+            <a href="makaleler.html" class="tablink"><div class="tab text-center mx-4">Makaleler</div></a>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+            <a href="dersler.html" class="tablink"><div class="tab text-center mx-4">Dersler</div></a>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+            <a href="paylasimlar.html" class="tablink"><div class="tab text-center mx-4">Paylaşımlar</div></a>
+        </div>
+    </div>
+    <!--Wrapper End-->
+
+    <!--Cards-->
+    <div class="background mx-4 my-2 p-4">
+        <h2>En son eklenenler <i class="fa-solid fa-clock-rotate-left fa-fade"></i></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-2">
+            <div class="col">
+              <div class="card h-100">
+                <img src="assets/images/yazilar/islam.webp" class="card-img-top" height="200px">
+                <span class="badge text-bg-success position-absolute">Yeni Yazı!</span>
+                <div class="card-body">
+                  <h5 class="card-title">İslam'ın Altın Çağında Evrim Teorisi: Müslüman Düşünürler, Doğadaki Evrim Yasasına Yönelik Neler Söyledi? </h5>
+                  <div class="btn-group position-absolute bottom-0 end-0" role="group" aria-label="Basic example">
+                    <button type="button" class="btn"><span><i class="fa-regular fa-thumbs-up">7</i></span></button>
+                    <button type="button" class="btn"><span><i class="fa-regular fa-bookmark"> 210</i></span></button>
+                    <button type="button" class="btn"><span><i class="fa-solid fa-share-nodes"></i></span></button>
+                    <button type="button" class="btn"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/images/yazilar/kimya.jpg" class="card-img-top" height="200px">
+                    <span class="badge text-bg-primary position-absolute">Yeni Soru!</span>
+                    <div class="card-body">
+                      <h5 class="card-title">Nasıl basit kimya öğrenebilirim? </h5>
+                      <div class="btn-group position-absolute bottom-0 end-0" role="group" aria-label="Basic example">
+                        <button type="button" class="btn"><span><i class="fa-regular fa-thumbs-up">4</i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-regular fa-bookmark"> 210</i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-solid fa-share-nodes"></i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/images/yazilar/makale.webp" class="card-img-top" height="200px">
+                    <span class="badge text-bg-danger position-absolute">Yeni Makale!</span>
+                    <div class="card-body">
+                      <h5 class="card-title">Vaka İncelemesi: Görkemli, Altın Yapraklı, Dev Titrek Kavak </h5>
+                      <div class="btn-group position-absolute bottom-0 end-0" role="group" aria-label="Basic example">
+                        <button type="button" class="btn"><span><i class="fa-regular fa-thumbs-up">5</i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-regular fa-bookmark"> 210</i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-solid fa-share-nodes"></i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </div>
+    <!--Cards End-->
+
+    <!--Cards-->
+    <div class="background mx-4 my-4 p-4">
+        <h2>En popüler makaleler <i class="fa-solid fa-newspaper fa-bounce"></i></h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-2">
+            <div class="col">
+              <div class="card h-100">
+                <img src="assets/images/makaleler/metabolizma.webp" class="card-img-top" height="200px">
+                <div class="card-body">
+                  <h5 class="card-title">Metabolizma Nedir? Metabolizma Nasıl Hızlandırılır?</h5>
+                  <div class="btn-group position-absolute bottom-0 end-0" role="group" aria-label="Basic example">
+                    <button type="button" class="btn"><span><i class="fa-regular fa-thumbs-up"> 943</i></span></button>
+                    <button type="button" class="btn"><span><i class="fa-regular fa-bookmark"> 210</i></span></button>
+                    <button type="button" class="btn"><span><i class="fa-solid fa-share-nodes"></i></span></button>
+                    <button type="button" class="btn"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/images/makaleler/pisayısı.webp" class="card-img-top" height="200px">
+                    <div class="card-body">
+                      <h5 class="card-title">Robertson-Walker Metriği Nedir?</h5>
+                      <div class="btn-group position-absolute bottom-0 end-0" role="group" aria-label="Basic example">
+                        <button type="button" class="btn"><span><i class="fa-regular fa-thumbs-up">476</i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-regular fa-bookmark"> 210</i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-solid fa-share-nodes"></i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/images/makaleler/kan.webp" class="card-img-top" height="200px">
+                    <div class="card-body">
+                      <h5 class="card-title">Kan Vermenin İnsan Sağlığına Faydaları ve Zararları Nelerdir?</h5>
+                      <div class="btn-group position-absolute bottom-0 end-0" role="group" aria-label="Basic example">
+                        <button type="button" class="btn"><span><i class="fa-regular fa-thumbs-up">632</i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-regular fa-bookmark"> 210</i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-solid fa-share-nodes"></i></span></button>
+                        <button type="button" class="btn"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </div>
+    <!--Cards End-->
+        
+
+    <!--Footer-->
+    <div class="container-fluid footerColor text-light">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 my-0 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+              <img src="assets/images/logo-white.svg" width="100px">  
+              <span class=" justify-content-center mx-3">Yeni ve güncel bilgiler için bizi sosyal medyadan takip etmeyi unutmayın.</span>
+            </a>
+          </div>
+          <div class="col mb-3">
+          </div>
+      
+          <div class="col mb-3">
+            <h5>KURUMSAL</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">İletişim</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gizlilik Politikası</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Çerez Politikası</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>ŞİRKET</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hakkımızda</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ekibimiz</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kariyer</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Basın</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>HİZMETLER</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kurslar</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Dersler</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Yazılar</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Makaleler</a></li>
+            </ul>
+          </div>
+        </footer>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-0 border-top">
+            <p>© 2024 Kromium, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex text-center">
+                <a href=""><li><i class="fa-brands fa-facebook fa-2xl mx-2"></i></li></a>
+                <a href=""><li><i class="fa-brands fa-instagram fa-2xl mx-2"></i></li></a>
+                <a href=""><li><i class="fa-brands fa-x-twitter fa-2xl mx-2"></i></li></a>
+                <a href=""><li><i class="fa-brands fa-youtube fa-2xl mx-2"></i></li></a>
+                <a href=""><li><i class="fa-brands fa-whatsapp fa-2xl mx-2"></i></li></a>
+            </ul>
+          </div>
+      </div>
+      
+    <!--Footer End-->
+        
+    <!--
+        <div class="footer">
+            <div class="footercontent">
+                <div class="bilgi">
+                    <img src="assets/images/logo-white.svg" width="100px" >
+                    <h2>KROMIUM</h2>
+                    <span>Yeni ve güncel bilgiler için bizi sosyal medyadan takip etmeyi unutmayın.</span>
+                    <div class="social">
+                        <ul>
+                            <a href=""><li><i class="fa-brands fa-facebook fa-2xl"></i></li></a>
+                            <a href=""><li><i class="fa-brands fa-instagram fa-2xl"></i></li></a>
+                            <a href=""><li><i class="fa-brands fa-x-twitter fa-2xl"></i></li></a>
+                            <a href=""><li><i class="fa-brands fa-youtube fa-2xl"></i></li></a>
+                            <a href=""><li><i class="fa-brands fa-whatsapp fa-2xl"></i></li></a>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-phone fa-2xl" style="padding: 40px;"></i><span>0212 275 45 45</span>
+                </div>
+                <div class="bolme">
+                    <span><strong>KURUMSAL</strong></span>
+                    <span><a href="iletisim.html">İletişim</a></span>
+                    <span><a href="https://yemin363.pitobt.com.tr/">Blog</a></span>
+                    <span><a href="#">Gizlilik Politikası</a></span>
+                    <span><a href="#">Çerez (Cookie) Politikası</a></span>
+                    <span><a href="#">Web Sitesi Aydınlatma Metni</a></span>
+                </div>
+                <div class="bolme">
+                    <span><strong>ŞİRKET</strong></span>
+                    <span><a href="hakkimizda.html">Hakkımızda</a></span>
+                    <span><a href="#">Ekibimiz</a></span>
+                    <span><a href="#">Kariyer</a></span>
+                    <span><a href="#">Basın</a></span>
+                </div>
+                <div class="bolme">
+                    <span><strong>HİZMETLER</strong></span>
+                    <span><a href="#">Kurslar</a></span>
+                    <span><a href="#">Dersler</a></span>
+                    <span><a href="#">Yazılar</a></span>
+                    <span><a href="#">Makaleler</a></span>
+                </div>
+            </div>
+        </div>
+-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

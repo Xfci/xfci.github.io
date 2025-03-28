@@ -1,0 +1,80 @@
+<?php
+$sunucu = "localhost"; 
+$kullanici_adi = "root";
+$sifre = ""; 
+$veritabani = "urunler_veritabani";
+
+$baglanti = new mysqli($sunucu, $kullanici_adi, $sifre, $veritabani);
+
+// Bağlantıyı kontrol et
+if ($baglanti->connect_error) {
+    die("Bağlantı hatası: " . $baglanti->connect_error);
+}
+?>
+
+<?php
+include 'baglanti.php'; 
+
+$sql = "SELECT * FROM urunler"; 
+$sonuc = $baglanti->query($sql); 
+
+echo "<h2>Ürün Listesi</h2>";
+echo "<table border='1'>";
+echo "<tr><th>ID</th><th>Ürün Adı</th><th>Fiyat</th><th>Sil</th></tr>";
+
+if ($sonuc->num_rows > 0) {
+    while ($satir = $sonuc->fetch_assoc()) {
+        echo "<tr>
+                <td>".$satir['urun_id']."</td>
+                <td>".$satir['urun_adi']."</td>
+                <td>".$satir['urun_fiyati']." TL</td>
+                <td><a href='urun_sil.php?id=".$satir['urun_id']."'>Sil</a></td>
+              </tr>";
+    }
+} else {
+    echo "<tr><td colspan='4'>Henüz ürün yok.</td></tr>";
+}
+echo "</table>";
+?>
+
+
+<?php
+include 'baglanti.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $urun_adi = $_POST["urun_adi"];
+    $urun_fiyati = $_POST["urun_fiyati"];
+
+    $sql = "INSERT INTO urunler (urun_adi, urun_fiyati) VALUES ('$urun_adi', '$urun_fiyati')";
+    
+    if ($baglanti->query($sql) === TRUE) {
+        echo "Ürün başarıyla eklendi.";
+    } else {
+        echo "Hata: " . $baglanti->error;
+    }
+}
+?>
+
+<h2>Yeni Ürün Ekle</h2>
+<form method="POST">
+    Ürün Adı: <input type="text" name="urun_adi" required><br>
+    Fiyat: <input type="text" name="urun_fiyati" required><br>
+    <button type="submit">Ekle</button>
+</form>
+
+<?php
+include 'baglanti.php'; 
+if (isset($_GET["id"])) {
+    $urun_id = $_GET["id"];
+    
+    $sql = "DELETE FROM urunler WHERE urun_id=$urun_id";
+    
+    if ($baglanti->query($sql) === TRUE) {
+        echo "Ürün silindi.";
+    } else {
+        echo "Hata: " . $baglanti->error;
+    }
+}
+?>
+<a href="urunleri_listele.php">Geri dön</a>
+

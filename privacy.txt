@@ -1,0 +1,31 @@
+Smart Factory – Gizlilik Politikası
+Güncelleme Tarihi: 17.05.2025
+
+Smart Factory olarak, kullanıcı gizliliğine büyük önem veriyoruz. Bu gizlilik politikası, uygulamamız aracılığıyla toplanan sınırlı verilerin nasıl işlendiğini ve korunduğunu açıklar.
+
+1. Toplanan Veriler
+Uygulamamızda yalnızca kullanıcıların hesap oluşturabilmesi amacıyla Firebase üzerinden aşağıdaki bilgiler toplanabilir:
+
+E-posta adresi
+
+Şifre (Firebase tarafından şifreli şekilde saklanır)
+
+2. Verilerin Kullanımı
+Toplanan veriler yalnızca kullanıcı kimlik doğrulaması (giriş/çıkış işlemleri) için kullanılır. Veriler:
+
+Analiz, reklam, pazarlama veya üçüncü taraf kullanım amacıyla kesinlikle kullanılmaz.
+
+Hiçbir üçüncü tarafla paylaşılmaz.
+
+3. Verilerin Saklanması
+Kullanıcı verileri, Firebase tarafından güvenli sunucularda saklanır. Veriler, kullanıcı hesabı silinene kadar sistemde kalır.
+
+4. Kullanıcı Hakları
+Kullanıcılar, hesaplarını silerek kişisel verilerinin sistemden kaldırılmasını talep edebilir. Herhangi bir veri işlemeye tabi tutulmadıkları için başka bir işlem yapılmasına gerek kalmaz.
+
+5. Veri Güvenliği
+Firebase altyapısı, kullanıcı verilerini korumak için gerekli teknik önlemleri almaktadır. Uygulama tarafında da verilerin güvenliği sağlanmaya çalışılmaktadır.
+
+6. İletişim
+Her türlü gizlilik sorunu için bizimle iletişime geçebilirsiniz:
+ E-posta: [senin e-posta adresin buraya gelecek]

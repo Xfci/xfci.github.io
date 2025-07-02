@@ -1,8 +1,8 @@
 {
-    "url": "https://github.com/Xfci/xfci.github.io/swagger.yaml",
+    "url": "https://xfci.github.io/swagger.yaml",
     "urls": [
         {
-            "url": "https://github.com/Xfci/xfci.github.io/swagger.yaml",
+            "url": "https://xfci.github.io/swagger.yaml",
             "name": "Foo"
         }
     ]

@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+    <title>Serapp Chatbot</title>
+    <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
-<body style="height:1920px;">
+<body>
     <n8nchatui-inpage></n8nchatui-inpage>
     <script type="module" defer>
         import Chatbot from "https://cdn.n8nchatui.com/v1/embed.js";
         Chatbot.initFull({
-          "n8nChatUrl": "http://localhost:5678/webhook/1b3a54c0-ca1e-42bc-8556-8ef16bc85f2c/chat",
+          "n8nChatUrl": "https://serapp.app.n8n.cloud/webhook/1b3a54c0-ca1e-42bc-8556-8ef16bc85f2c/chat",
           "metadata": {},
           "theme": {
             "button": {

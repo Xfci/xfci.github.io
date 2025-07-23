@@ -3,57 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yusuf E. Aktas</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-        
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            background: url('background.gif') no-repeat center center fixed;
-            background-size: cover;
-            text-align: center;
-        }
-        
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Parlaklığı %50 düşürmek için */
-        }
-        
-        .content {
-            position: relative;
-            z-index: 1;
-            margin-top: 20px; /* İçeriği üstte konumlandırmak için */
-        }
-        
-        .title {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 48px;
-            color: white;
-            text-shadow: 0px 0px 15px rgba(255, 255, 255, 1), 0px 0px 30px rgba(255, 255, 255, 0.8); /* Beyaz glow efekti */
-        }
-        
-        .description {
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            color: white;
-            margin-top: 10px;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div class="overlay"></div>
-    <div class="content">
-        <div class="title">Y.E.A</div>
-        <div class="description">Özgeçmişe ulaşmak için <a href="cv.pdf"> tıkla.</a> </div>
-    </div>
+    <h1>Chatbot</h1>
+    <n8nchatui-inpage></n8nchatui-inpage>
+    <script type="module" defer>
+        import Chatbot from "https://cdn.n8nchatui.com/v1/embed.js";
+        Chatbot.initFull({
+          "n8nChatUrl": "http://localhost:5678/webhook/1b3a54c0-ca1e-42bc-8556-8ef16bc85f2c/chat",
+          "metadata": {},
+          "theme": {
+            "button": {
+              "iconColor": "#373434",
+              "backgroundColor": "#cdffb8"
+            },
+            "chatWindow": {
+              "borderRadiusStyle": "none",
+              "avatarBorderRadius": 25,
+              "messageBorderRadius": 22,
+              "showTitle": true,
+              "title": "Serapp Chatbot",
+              "titleAvatarSrc": "https://xfci.github.io/avatar.svg",
+              "avatarSize": 36,
+              "welcomeMessage": "Merhaba, bitkiler veya seralar hakkında yardıma mı ihtiyacınız var? Bana danışabilirsiniz.",
+              "errorMessage": "Bilinmeyen bir hata meydana geldi! Daha sonra tekrar deneyiniz.",
+              "backgroundColor": "#212121",
+              "height": 0,
+              "width": 0,
+              "fontSize": 16,
+              "starterPrompts": [
+                "Bu hastalık nedir?",
+                "Bir seranın ihtiyaçları?"
+              ],
+              "starterPromptFontSize": 13,
+              "renderHTML": false,
+              "clearChatOnReload": false,
+              "showScrollbar": false,
+              "botMessage": {
+                "backgroundColor": "#43af08",
+                "textColor": "#fafafa",
+                "showAvatar": true,
+                "avatarSrc": "https://xfci.github.io/avatar-png.svg"
+              },
+              "userMessage": {
+                "backgroundColor": "#313031",
+                "textColor": "#fff",
+                "showAvatar": true,
+                "avatarSrc": "https://xfci.github.io/avatar-user.svg"
+              },
+              "textInput": {
+                "placeholder": "Sorunuzu yazınız...",
+                "backgroundColor": "#313031",
+                "textColor": "#808080",
+                "sendButtonColor": "#808080",
+                "maxChars": 50,
+                "maxCharsWarningMessage": "You exceeded the characters limit. Please input less than 50 characters.",
+                "autoFocus": false,
+                "borderRadius": 35,
+                "sendButtonBorderRadius": 50
+              },
+              "uploadsConfig": {
+                "enabled": true,
+                "acceptFileTypes": [
+                  "jpeg",
+                  "jpg",
+                  "png",
+                  "webp",
+                  "svg",
+                  "bmp"
+                ],
+                "maxFiles": 5,
+                "maxSizeInMB": 10
+              }
+            }
+          }
+          });
+        </script>
 </body>
 </html>
